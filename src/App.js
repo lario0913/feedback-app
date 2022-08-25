@@ -7,6 +7,7 @@ import FeedbackStats from './components/FeedbackStats'
 import Header from './components/Header'
 import FeedbackData from './data/FeedbackData'
 import AboutPage from './pages/AboutPage'
+import { FeedbackProvider } from './context/FeedbackContext'
 
 function App () {
   const [feedback, setFeedback] = useState(FeedbackData)
@@ -23,7 +24,8 @@ function App () {
   }
   
   return (
-    <Router>
+  <FeedbackProvider>
+      <Router>
       <Header/>
       <div className='container'>
         <Routes>
@@ -44,6 +46,7 @@ function App () {
       
       
     </Router>
+  </FeedbackProvider>
   )
 }
 
