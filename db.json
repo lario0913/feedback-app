@@ -16,7 +16,7 @@
       "text": "This is a feedback item 3 from the server"
     },
     {
-      "rating": "8",
+      "rating": 8,
       "text": "Another one from postman noni",
       "id": 4
     }
